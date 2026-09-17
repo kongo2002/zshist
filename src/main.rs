@@ -11,7 +11,7 @@ use store::{Entry, Row, Store};
 const ZSH_INIT: &str = include_str!("zsh_init.zsh");
 
 #[derive(Parser)]
-#[command(name = "zshist")]
+#[command(name = "zshist", version)]
 struct Cli {
     #[command(subcommand)]
     command: Command,
