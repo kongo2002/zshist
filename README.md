@@ -1,5 +1,7 @@
 # zshist
 
+[![zshist](https://github.com/kongo2002/zshist/actions/workflows/ci.yml/badge.svg)][actions]
+
 A shell history daemon-free replacement for zsh's built-in history. Stores
 every command in a JSONL file with directory, exit code, timestamp, and
 duration, and gives you fzf-powered fuzzy search plus prefix-based
@@ -104,3 +106,6 @@ ZSH_AUTOSUGGEST_STRATEGY=(zshist)
 History is stored at `$HOME/.local/share/zshist/history.jsonl`. Each line is
 a JSON object: timestamp, directory, exit code, command text, and duration
 in milliseconds.
+
+
+[actions]: https://github.com/kongo2002/zshist/actions/
